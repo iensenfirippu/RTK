@@ -1,0 +1,227 @@
+/* - Default page layout - */
+html, body, #Popups {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+html, body, body * {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+}
+body {
+	font-family: sans, sans-serif, arial;
+	font-size: 75%;
+	overflow-y: auto;
+}
+/* - Default page layout - */
+
+/* - Top bar styling - */
+#topbar {
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	width: 100%;
+	padding: 4px;
+	color: #ffffff;
+	background-color: #000000;
+	border-bottom: 1px #888888;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);
+}
+#topbar form, #topbar label, #topbar input, #topbar select, #topbar div {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	height: auto;
+	clear: none;
+	float: left;
+	vertical-align: bottom;
+}
+#topbar label {
+	margin-right: 5px;
+	font-size: 0.85em;
+}
+#topbar input, #topbar select {
+	margin-right: 15px;
+	border: none;
+	border-radius: 2px;
+	color: #000000;
+	background-color: #ffffff;
+}
+/* - Top bar styling - */
+
+/* - Menu styling - */
+#mainmenu {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	z-index: 10;
+}
+#mainmenu a, #mymenu a {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	
+	margin: 0px;
+	padding: 5px;
+	
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: Capitalize;
+	text-align: center;
+	vertical-align: top;
+	
+	background-color: #777799;
+	border: 2px solid #ffffff;
+	border-top: none;
+	
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 0px !important;
+}
+#mainmenu a {
+	margin-right: 5px;
+}
+#mymenu a {
+	margin-left: 5px;
+}
+#mainmenu a.selected, #mainmenu a:hover {
+	padding-top: 15px;
+	
+	font-size: 1.1em;
+	background-color: #8888aa;
+}
+#mymenu {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	z-index: 10;
+}
+#mymenu a.selected, #mymenu a:hover {
+	padding-top: 15px;
+	
+	font-size: 1.1em;
+	background-color: #8888aa;
+}
+/* - Menu styling - */
+
+/* - Login Page - */
+#loginbox {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	padding: 75px 25px 75px 25px;
+	
+	background-color: #8888aa;
+	border: 2px solid #ffffff;
+	
+	box-shadow: 0 0 25px 10px rgba(0,0,0,0.25);
+	border-radius: 50%;
+}
+/* - Login Page - */
+
+/* - Recipe Page - */
+#recipebox {
+	text-align: center;
+	margin-bottom: 0px !important;
+}
+#recipebox .recipedescription {
+	text-align: left;
+}
+#recipebox .recipedescription h2 {
+	margin: 2px 0 10px 20px;
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	color: #444444;
+}
+#recipebox .recipedescription a {
+	margin: 0 12px 5px 5px;
+	float: right;
+}
+#recipebox .stepbox a {
+	margin: 5px;
+	float: right;
+}
+#recipebox > a {
+	display: inline-block;
+	margin: 0 0 0 5px;
+	padding: 5px;
+	
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: Capitalize;
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #777799;
+	border: 2px solid #ffffff;
+	
+	border-radius: 10px;
+}
+#recipebox a:hover {
+	background-color: #8888aa;
+}
+#recipebox .stepbox {
+	display: block;
+	position: relative;
+	margin: 10px 0 0 0;
+	padding: 5px;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	text-align: left;
+}
+#recipebox .stepbox h1 {
+	float: left;
+	width: auto;
+	height: auto;
+	margin: 0 5px 5px 0;
+	padding: 2px 8px;
+	text-align: center;
+	font-size: 2em;
+	color: #ffffff;
+	background-color: #555555;
+	border: 1px solid #000000;
+	border-radius: 50%;
+}
+#recipebox .optionbox {
+	margin: 0;
+	padding: 0 20px 0 0;
+	text-align: right;
+}
+#recipebox .optionbox a {
+	display: inline-block;
+	margin: -1.25px 0 0 5px;
+	padding: 5px;
+	
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: Capitalize;
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #777799;
+	border: 2px solid #ffffff;
+	
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+#recipebox .optionbox a:hover {
+	background-color: #8888aa;
+}
+/* - Recipe Page - */

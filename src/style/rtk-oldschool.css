@@ -1,0 +1,355 @@
+/* - Default page layout - */
+body {
+	background-color: #0000ff;
+}
+#wrapper {
+	position: relative;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+}
+#main {
+	position: relative;
+	padding: 20px;
+	margin-bottom: 30px;
+	
+	background-color: #aaaaaa;
+	border: 4px outset #bbbbbb;
+	
+	z-index: 10;
+}
+#main div {
+	margin-bottom: 10px;
+}
+#main div:last-of-type {
+	margin-bottom: 0px !important;
+}
+/* - Default page layout - */
+
+/* - Basic default styling - */
+div {
+	padding: 0;
+	margin: 0;
+}
+p {
+	display: block;
+	margin: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.15em; }
+h4 { font-size: 1.1em; }
+h5 { font-size: 1.05em; }
+h6 { font-size: 1.0em; }
+hr {
+	height: 1px;
+	border: 0px;
+	background-color: #cccccc;
+}
+a {
+	position: relative;
+	text-decoration: none;
+	color: #0000ff;
+	font-size: 1em;
+	outline: none;
+}
+input {
+	background-color: #ffffff;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.clearfix {
+	clear: both;
+}
+/* - Basic default styling - */
+
+/* - Keyboard link/input highlighting - */
+a, input, textarea, select {
+	z-index: 10;
+}
+a:focus, input:focus, textarea:focus, select:focus {
+	z-index: 900 !important;
+}
+a:focus, .hiddenlink a, input:focus, textarea:focus, select:focus {
+	border-radius: 10px;
+	box-shadow: 0 0 10px 10px #666666 !important;
+}
+a:focus, .hiddenlink a {
+	color: #ffffff !important;
+	border-color: #666666;
+	background-color: #666666;
+}
+/* - Keyboard link/input highlighting - */
+
+/* - Popups styling - */
+#Popups {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	padding-top: 100px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1000;
+	text-align: center;
+	vertical-align: middle;
+}
+.popup {
+	display: block;
+	position: relative;
+	padding: 25px;
+	max-width: 40%;
+	margin: 25px auto;
+	background-color: rgba(0,0,0,0.75);
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+}
+.popup .close {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	border: 1px solid rgba(255,255,255,0);
+}
+.popup .close:hover {
+	border: 1px solid #ffffff;
+}
+/* - Popups styling - */
+
+/* - Form styling - */
+.form {
+	padding-top: 60px;
+	clear: both;
+}
+.formline {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px !important;
+	padding: 2px;
+	width: 80%;
+	height: 25px;
+	font-size: 1.3em;
+	clear: both;
+}
+.formline label {
+	float: left;
+	width: 30%;
+	padding-top: 3px;
+}
+.formline .formgroup {
+	margin-bottom: 0px !important;
+	float: right;
+	width: 60%;
+}
+.formgroup input {
+	height: 32px;
+}
+.formgroup input, .formgroup textarea, .formgroup select {
+	width: 100%;
+	padding: 4px;
+	margin-bottom: 3px;
+	color: #000000;
+	background-color: #ffffff;
+	border: 3px inset #999999;
+	border-radius: 0 !important;
+	box-sizing: border-box;
+	resize: none;
+}
+.formgroup input.filebox {
+	width: 100%;
+	padding: 0px;
+}
+.formgroup input.checkbox, .formgroup input.radiobox {
+	display: inline-block;
+	height: 10px;
+	width: auto;
+	float: none;
+}
+.formgroup span {
+	margin-right: 15px;
+}
+.formgroup input.submit {
+	float: none;
+	height: 24px;
+	padding: 0px;
+	width: auto;
+	background-color: #cccccc;
+	border-style: outset;
+}
+.formgroup input.submit:hover {
+	background-color: #aaaaaa;
+}
+/* - Form styling - */
+
+/* - Menu styling - */
+ul.menu {
+	margin: 0px;
+	padding: 0px;
+	
+	list-style: none;
+}
+ul.menu li {
+	margin: 0px 5px 5px 0px;
+	padding: 0px;
+}
+ul.menu a {
+}
+/* - Menu styling - */
+
+/* - ListView styling - */
+.listview {
+	background-color: #aaaaaa;
+	border: 3px inset #bbbbbb;
+}
+.listview table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.listview .lv_row {
+	background-color: #aaaaaa;
+}
+.listview .lv_altrow {
+	background-color: #afafaf;
+}
+.listview .lv_cell {
+	padding: 3px;
+	border: 3px inset #bbbbbb;
+}
+.listview .lv_firstcell {}
+.listview .lv_lastcell {}
+.listview .lv_smallcell {
+	width: 1%;
+	white-space: nowrap;
+}
+.listview .lv_headercell {
+	background-color: #555555;
+	color: #ffffff;
+	font-weight: bold;
+}
+.listview .lv_altheadercell {
+	background-color: #4a4a4a;
+}
+.listview .lv_headerrow {
+}
+.listview input, .listview select {
+	width: 96%;
+	height: 20px;
+	margin: 2px 2% 2px 2%;
+	box-sizing: border-box;
+}
+/* - ListView styling - */
+
+/* - CommentView styling - */
+#CommentView {
+	width: 95%;
+	margin: 0 auto 0 auto;
+	padding: 40px 10px 10px 10px;
+	z-index: 5;
+}
+#CommentView #Comments {
+	color: #000000;
+}
+#CommentView #Comments:hover {
+	color: #7f7f7f;
+}
+#CommentView .commentnone {
+	padding: 5px 10px 10px 10px;
+}
+#CommentView .comment .comment {
+	padding-left: 10px;
+}
+#CommentView .commentinfo {
+	padding: 5px;
+	clear: both;
+}
+#CommentView .commentposter {
+	padding-right: 5px;
+	color: #666666;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+#CommentView .commenttime {
+	float: right;
+	padding-left: 10px;
+	color: #666666;
+}
+#CommentView .commentinfo:hover, #CommentView .selected {
+	color: #000000;
+	background-color: #cccccc;
+}
+#CommentView #NewComment {
+	margin-top: 5px;
+	padding: 0;
+	letter-spacing: 0;
+	height: 24px;
+}
+#CommentView #NewComment:hover {
+	background-color: #cccccc;
+}
+#CommentView #NewComment a, #CommentView #NewComment input {
+	display: inline-block;
+	float: left;
+	height: 24px;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+	text-align: left;
+	border: 1px solid #ffffff;
+	border-radius: 0px !important;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	width: 74%;
+}
+#CommentView #NewComment a {
+	padding: 4px 3px 2px 3px;
+}
+#CommentView #NewComment a, #CommentView #NewComment input.submit {
+	color: #000000 !important;
+	background-color: #dddddd;
+	width: 13%;
+	text-align: center;
+	vertical-align: middle;
+}
+#CommentView #NewComment a:hover, #CommentView #NewComment input.submit:hover {
+	background-color: #eeeeee;
+}
+#CommentView #NewComment #CommentInput {
+}
+/* - CommentView styling - */
+
+/* - Pagination - */
+.pagination {
+	margin: 0px;
+	padding: 5px 0px 5px 0px;
+	font-size: 10px;
+	text-align: center;
+}
+.pagination .current {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.pagination li {
+	display: inline-block;
+	width: 20px;
+}
+.pagination a {
+	display: block;
+	text-decoration: none;
+}
+.pagination a:hover {
+	/*color: #000000;*/
+}
+/* - Pagination - */
